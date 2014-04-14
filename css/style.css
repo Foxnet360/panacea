@@ -1,0 +1,64 @@
+body{
+		background-color: #F1F1F1;
+	}
+.main-section{
+	background-color: #008FD5;
+	text-align: center;
+}
+
+footer{
+	background-color: #333333;
+	color: white;
+}
+
+.pricing-table{
+	width: 32%;
+}
+// Small screens
+
+@media only screen { 
+	.pricing-table {
+    display: inline;
+}
+	
+	
+} /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+	.pricing-table {
+    display: inline;
+}
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) { 
+	.pricing-table {
+    display: inline-block;
+}
+	
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+	.pricing-table {
+    display: inline-block;
+}
+	
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+@media only screen and (min-width: 64.063em) { 
+	.pricing-table {
+    display: inline-table;
+}
+
+	
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+		.pricing-table {
+    display: inline-table;
+}
+
+	
+} /* min-width 1025px and max-width 1440px, use when QAing 
